@@ -37,7 +37,7 @@ void *runner(void *param){
     int end = start + SUM_TO;
 
     long current_thread_total = 0;
-    for(int i = start; i <= end; i++){
+    for(int i = start; i < end; i++){
         current_thread_total += i;
     }
     printf("the current thread %d has been summed to: %ld\n", current_thread_id, current_thread_total);
